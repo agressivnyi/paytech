@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { M_PLUS_1 } from 'next/font/google'
 import './globals.css'
+import Nav from './nav'
 
 const inter = M_PLUS_1({ subsets: ['latin', 'latin-ext'] })
 
@@ -16,7 +17,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {/* ============= Navgiation ===============*/}
+        <Nav />
+        {children}
+        {/* ============= Footer ===============*/}
+      </body>
     </html>
   )
 }

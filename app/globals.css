@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  background: #1A1E1C;
+  background: #1a1e1c;
   font-size: 1rem;
   color: #fff;
 }
@@ -14,4 +14,16 @@ button,
   font-size: 1rem;
   font-weight: 500;
   cursor: pointer;
+}
+
+.footer__link__group {
+  @apply flex flex-col gap-3 md:col-span-2;
+
+  .group__title {
+    @apply text-base font-bold;
+  }
+}
+
+.footer__link__group li {
+  @apply text-base font-normal text-[#ADB2B1] mt-2;
 }

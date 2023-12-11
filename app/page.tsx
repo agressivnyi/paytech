@@ -1,8 +1,15 @@
-import Image from 'next/image'
+import Brands from './component/brands'
+import Hero from './component/hero'
+import Service from './component/service'
+import StatsCards from './component/stats-card'
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col gap-y-32 my-24 gap-x-8 max-w-[1440px] px-5 lg:px-10 xl:px-[100px] m-auto">
+      <Hero />
+      <StatsCards />
+      <Brands />
+      <Service />
     </main>
   )
 }

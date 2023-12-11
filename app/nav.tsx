@@ -11,7 +11,7 @@ export default function AppNavigation() {
   const className =
     "block fixed w-full h-full top-0 left-0 bg-blue/30 backdrop-blur-sm p-6 z-10 lg:hidden";
   return (
-    <nav className="app_nav w-full flex sticky justify-between items-center top-2">
+    <nav className="app_nav w-full max-w-[1240px] m-auto flex sticky justify-between items-center top-2 bg-white/20 backdrop-blur-2xl z-20">
       <article className="col-span-4 flex gap-3">
         <Image src={logo} alt="website logo" height={18} width={18} />
         <span className="text-xl font-bold">

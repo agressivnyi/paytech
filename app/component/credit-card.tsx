@@ -58,7 +58,7 @@ export default function CreditCard({ className }: { className?: string }) {
           </span>
         </div>
         <svg
-          className="w-10 lg:w-auto"
+          className="w-8 lg:w-auto"
           xmlns="http://www.w3.org/2000/svg"
           width="59"
           height="48"

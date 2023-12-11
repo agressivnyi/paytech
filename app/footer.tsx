@@ -2,7 +2,8 @@ import Image from "next/image";
 import logo from "../public/banki.png";
 export default function Footer() {
   return (
-    <footer className="flex flex-col gap-y-6 px-6 py-8 bg-[#2834308D] backdrop-blur-md">
+    <footer className="px-6 py-8 bg-[#2834308D] backdrop-blur-md">
+      <div className="flex flex-col gap-y-6 max-w-[1240px] m-auto">
       <div className="grid grid-cols-1 gap-6 md:grid-cols-12">
         <div className="flex flex-col gap-2.5 md:col-span-4">
           <div className="flex gap-3 items-center">
@@ -58,6 +59,7 @@ export default function Footer() {
       <div className="flex flex-col justify-between gap-y-2 md:flex-row">
         <span className="text-xs text-[#ADB2B1]">copyright 2024 DoraDesign All Rights Reserved</span>
         <span className="text-xs text-[#ADB2B1]">This page uses cookies. See cookies details here</span>
+      </div>
       </div>
     </footer>
   );

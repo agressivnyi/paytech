@@ -3,6 +3,7 @@ import Hero from './component/hero'
 import Processes from './component/processes'
 import Service from './component/service'
 import StatsCards from './component/stats-card'
+import Testimonial from './component/testimonials'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Brands />
       <Service />
       <Processes />
+      <Testimonial />
     </main>
   )
 }

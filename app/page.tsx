@@ -1,5 +1,6 @@
 import Brands from './component/brands'
 import Hero from './component/hero'
+import Processes from './component/processes'
 import Service from './component/service'
 import StatsCards from './component/stats-card'
 
@@ -10,6 +11,7 @@ export default function Home() {
       <StatsCards />
       <Brands />
       <Service />
+      <Processes />
     </main>
   )
 }

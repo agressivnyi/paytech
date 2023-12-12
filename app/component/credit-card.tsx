@@ -1,15 +1,23 @@
+type Props = {
+  className?: string;
+  iconColor?: string;
+  logoClass?: string;
+  signalClass?: string;
+  chipClass?: string;
+};
 export default function CreditCard(
-  { className, iconColor }: { className?: string; iconColor?: string },
+  props: Props,
 ) {
+  const { className, iconColor, logoClass, signalClass, chipClass } = props;
   return (
     <article
-      className={`px-4 py-6 md:pt-9 md:pr-9 md:pb-9 md:pl-[3.5rem] border-2 border-white rounded-[2rem] overflow-hidden ${
+      className={`flex flex-col gap-8 px-4 py-6 md:pt-9 md:pr-9 md:pb-9 md:pl-[3.5rem] border-2 border-white rounded-[2rem] overflow-hidden ${
         className ? className : ""
       }`}
     >
       <div className="flex justify-between items-center">
         <svg
-          className="w-10 lg:w-auto"
+          className={`${logoClass ? logoClass : ""}`}
           xmlns="http://www.w3.org/2000/svg"
           width="60"
           height="35"
@@ -24,7 +32,7 @@ export default function CreditCard(
           />
         </svg>
         <svg
-          className="h-8 lg:h-auto"
+          className={signalClass ? signalClass : ""}
           xmlns="http://www.w3.org/2000/svg"
           width="27"
           height="47"
@@ -39,8 +47,8 @@ export default function CreditCard(
           />
         </svg>
       </div>
-      <div className="credit__pin mt-8 lg:mt-12">
-        <span className="text-sm text-[#B9BEBD]">Credit Card No.</span>
+      <div className="credit__pin">
+        <span className="text-[#B9BEBD]">Credit Card No.</span>
         <div className="pins text-l font-bold flex gap-x-6 mt-4 lg:text-2xl md:gap-x-8">
           <span>3232</span>
           <span>2020</span>
@@ -48,19 +56,19 @@ export default function CreditCard(
           <span>2023</span>
         </div>
       </div>
-      <div className="flex justify-between items-center mt-6 lg:mt-9">
+      <div className="flex justify-between items-center">
         <div className="flex gap-x-11">
           <span className="flex flex-col gap-2">
-            <small className="text-xs font-semibold text-[#B9BEBD]">Name</small>
-            <span className="text-xs font-medium uppercase">Erica Erica</span>
+            <span className="font-semibold text-[#B9BEBD]">Name</span>
+            <span className="font-medium uppercase">Erica Erica</span>
           </span>
           <span className="flex flex-col gap-2">
-            <small className="text-xs font-semibold text-[#B9BEBD]">Exp.</small>
-            <span className="text-xs font-medium uppercase">2050</span>
+            <span className="font-semibold text-[#B9BEBD]">Exp.</span>
+            <span className="font-medium uppercase">2050</span>
           </span>
         </div>
         <svg
-          className="w-8 lg:w-auto"
+          className={chipClass ? chipClass : ""}
           xmlns="http://www.w3.org/2000/svg"
           width="59"
           height="48"

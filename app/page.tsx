@@ -1,4 +1,5 @@
 import Brands from './component/brands'
+import CTA from './component/cta'
 import FAQs from './component/faqs'
 import Hero from './component/hero'
 import Processes from './component/processes'
@@ -16,6 +17,7 @@ export default function Home() {
       <Processes />
       <Testimonial />
       <FAQs />
+      <CTA />
     </main>
   )
 }

@@ -4,7 +4,7 @@ import imgAppstore from "../../public/appstore.png";
 import imgMockup from "../../public/mockup-app.png";
 export default function CTA() {
   return (
-    <section className="grid grid-cols-1 gap-y-16 items-center overflow-hidden md:grid-cols-2 -mb-24">
+    <section className="grid grid-cols-1 gap-y-16 items-center overflow-hidden md:grid-cols-2">
       <article className="flex flex-col gap-y-8">
         <div className="flex flex-col gap-y-5">
           <h2 className="text-5xl font-bold">

@@ -4,8 +4,8 @@ import Button from "./ui/button";
 
 export default function Hero() {
   return (
-    <header className="grid grid-cols-1 gap-y-24 md:grid-cols-2">
-      <div className="flex flex-col gap-8">
+    <header className="grid grid-cols-1 gap-y-24 lg:grid-cols-2">
+      <div className="flex flex-col gap-8 order-last lg:order-first">
         <h1 className="text-4xl font-bold lg:text-6xl">
           Discover the Perfect Credit Card for You
         </h1>
@@ -61,13 +61,13 @@ export default function Hero() {
       </div>
       <div className="relative h-fill flex justify-end">
         <CreditCard
-          className="absolute min-w-[320px] top-7 right-0 text-sm border-gray-50 md:min-w-56 
-                  lg:text-base lg:w-[520px] bg-gradient-gray rotate-6 backdrop-blur-[37px] z-10"
+          className="absolute w-full top-7 right-0 text-sm border-gray-50 md:min-w-56 md:right-40 lg:right-0
+                  lg:text-xl md:w-[480px] lg:w-[520px] bg-gradient-gray rotate-6 backdrop-blur-[37px] z-10"
           logoClass="w-8 md:w-auto"
           signalClass="w-8 h-8 md:w-auto md:h-auto"
           chipClass="w-8 md:w-auto"
         />
-        <div className="relative h-72 w-72 bg-skin bottom-0 -right-[40%] lg:w-[492px] lg:h-[492px] md:-right-[33%] rounded-full z-0" />
+        <div className="relative h-72 w-72 bg-skin bottom-0 -right-[40%] md:w-96 md:h-96 lg:w-[492px] lg:h-[492px] md:-right-[10%] lg:-right-[33%] rounded-full z-0" />
       </div>
     </header>
   );

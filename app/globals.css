@@ -4,9 +4,16 @@
 
 body {
   background: #1a1e1c;
+  background-image: url('../public/bg.png');
+  background-size: cover;
   font-size: 1rem;
   color: #fff;
   overflow-x: hidden;
+}
+body::after {
+  position: fixed;
+  min-height: 100dvh;
+  min-width: 100dvw;
 }
 
 button,

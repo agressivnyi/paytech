@@ -4,7 +4,7 @@ import Button from "./ui/button";
 export default function Processes() {
   return (
     <section className="flex flex-col gap-y-32">
-      <div className="grid grid-cols-1 gap-y-4 gap-x-8 items-center lg:grid-cols-2">
+      <div className="grid grid-cols-1 gap-y-12 gap-x-8 items-center lg:grid-cols-2">
         <article className="flex flex-col gap-6">
           <h2 className="text-[40px] font-bold">
             Design your personalized credit card.
@@ -15,25 +15,26 @@ export default function Processes() {
           </p>
           <Button className="self-start">Create New Card</Button>
         </article>
-        <div className="relative min-h-[400px] order-first lg:order-last">
+        <div className="relative flex min-h-[400px] order-first lg:order-last">
           <CreditCard
-            className="absolute w-full gap-y-2 bg-white/10 text-xs font-bold backdrop-blur-sm z-30 -skew-x-[13deg] md:w-[380px] md:text-base md:left-1/2 md:-translate-x-1/2 lg:w-[435px] lg:right-0 lg:left-auto lg:translate-x-0"
-            logoClass="w-8"
-            signalClass="w-6 h-6"
-            chipClass="w-8"
+            className="absolute w-11/12 max-w-[380px] gap-y-2 bg-white/10 text-xs font-bold backdrop-blur-sm z-30 -skew-x-[13deg] md:text-base right-1/2 translate-x-1/2 lg:w-full lg:max-w-[450px] lg:right-10 lg:translate-x-0"
+            logoClass="w-8 lg:w-10"
+            signalClass="w-6 h-6 lg:w-8 lg:h-8"
+            chipClass="w-8 lg:w-10"
           />
           <CreditCard
-            className="absolute w-full gap-y-2 bg-skin text-xs text-black font-bold backdrop-blur-sm z-20 -skew-x-[17deg] translate-y-20 translate-x-2 md:w-[380px] md:text-base md:left-1/2 md:-translate-x-1/2 lg:w-[435px] lg:right-0 lg:left-auto lg:translate-x-0"
-            logoClass="w-8"
-            signalClass="w-6 h-8"
-            chipClass="w-8"
+            className="absolute w-11/12 max-w-[380px] gap-y-2 bg-skin text-xs text-black font-bold backdrop-blur-sm z-20 -skew-x-[17deg] translate-y-20 3 md:w-[380px] md:max-w-[400px] md:text-base right-1/2 translate-x-[55%] lg:w-full lg:max-w-[450px] lg:right-8 lg:translate-x-3"
+            logoClass="w-8 lg:w-10"
+            signalClass="w-6 h-6 lg:w-8 lg:h-8"
+            chipClass="w-8 lg:w-10"
             iconColor="black"
           />
           <CreditCard
-            className="absolute w-full gap-y-2 bg-white text-xs text-black font-bold backdrop-blur-sm z-10 -skew-x-[17deg] translate-y-[10.75rem] translate-x-4 md:w-[380px] md:text-base md:left-1/2 md:-translate-x-1/2 lg:w-[435px] lg:right-0 lg:left-auto lg:translate-x-0"
+            className="absolute w-11/12 max-w-[380px] gap-y-2 bg-white text-xs text-black font-bold backdrop-blur-sm z-10 -skew-x-[17deg] translate-y-[10.75rem] md:w-[380px] md:max-w-[400px] md:text-base right-1/2 translate-x-[60%] lg:w-full lg:max-w-[450px] lg:right-0 lg:left-auto lg:translate-x-0"
             iconColor="black"
-            signalClass="w-6 h-8"
-            chipClass="w-8"
+            logoClass="w-8 lg:w-10"
+            signalClass="w-6 h-6 lg:w-8 lg:h-8"
+            chipClass="w-8 lg:w-10"
           />
         </div>
       </div>
@@ -54,13 +55,13 @@ export default function Processes() {
         </article>
         <div className="relative flex flex-col items-center lg:items-start">
           <CreditCard
-            className="relative w-full gap-y-2 bg-white/10 text-xs font-bold backdrop-blur-sm z-30 sm:w-11/12 md:w-[420px] md:gap-y-8 md:text-base lg:w-[435px]"
+            className="relative w-full max-w-[380px] gap-y-2 bg-white/10 text-xs font-bold backdrop-blur-sm z-30 sm:w-11/12 md:gap-y-8 md:w-full md:max-w-[420px] md:text-base lg:w-full lg:max-w-[450px]"
             logoClass="w-8 md:w-12"
             signalClass="w-6 h-6 md:w-12 md:h-12"
             chipClass="w-8 md:w-12"
           />
           <CreditCard
-            className="relative w-full gap-y-2 bg-skin text-xs text-black font-bold backdrop-blur-sm z-20 skew-x-[17deg] -translate-y-16 right-0 md:w-[420px] md:text-base lg:w-[435px]"
+            className="relative w-full max-w-[380px] gap-y-2 bg-skin text-xs text-black font-bold backdrop-blur-sm z-20 skew-x-[17deg] -translate-y-16 right-0 md:w-full md:max-w-[420px] md:text-base lg:w-full lg:max-w-[450px]"
             logoClass="w-8 md:w-12"
             signalClass="w-6 h-8 md:w-12 h-12"
             chipClass="w-8 md:w-12"

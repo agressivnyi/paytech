@@ -26,7 +26,7 @@ export default function Accordion({
         className="flex gap-3 items-center justify-between"
         onClick={() => setOpenAccordion((prevState) => !prevState)}
       >
-        <h4 className="text-2xl font-bold text-ellipsis max-w-[90%]">
+        <h4 className="text-xl lg:text-2xl font-bold text-ellipsis max-w-[90%]">
           {title}
         </h4>
         <button className="bg-transparent flex text-2xl">

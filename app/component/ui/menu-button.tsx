@@ -4,7 +4,7 @@ export default function MenuButton({ onClick }: { onClick: () => void }) {
   const [open, setOpen] = useState(false);
   return (
     <button
-      className="border-2 border-green-500 p-2 cursor-pointer z-20 lg:hidden"
+      className="p-2 cursor-pointer z-20 lg:hidden"
       onClick={() => {
         onClick && onClick();
         setOpen((prevOpen) => !prevOpen);

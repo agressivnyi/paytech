@@ -17,6 +17,16 @@ button,
   cursor: pointer;
 }
 
+@media (max-width: 1024px) {
+  .mobile__menu {
+    @apply fixed min-w-full min-h-screen top-[100%] right-0 bg-black/90 backdrop-blur-md;
+
+    & > div {
+      @apply py-12 items-center;
+    }
+  }
+}
+
 .footer__link__group {
   @apply flex flex-col gap-3 md:col-span-2;
 
@@ -28,4 +38,3 @@ button,
 .footer__link__group li {
   @apply text-base font-normal text-[#ADB2B1] mt-2;
 }
-

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import CreditCard from "./credit-card";
 import Button from "./ui/button";
 
@@ -34,6 +35,29 @@ export default function Hero() {
         >
           Get Started
         </Button>
+        <div className="flex w-72 items-center md:w-96">
+          <div className="flex">
+            <Image src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png'} alt='pikachu'
+              height={48}
+              width={48}
+              className="relative rounded-full border-solid border-2 border-gray-100 md:h-16 md:w-16 z-10 bg-yellow-600"
+              />
+            <Image src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png'} alt='charmander'
+              height={48}
+              width={48}
+              className="relative rounded-full border-solid border-2 border-gray-100 bg-orange-600 md:h-16 md:w-16 -left-3 z-10"
+              />
+            <Image src={'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png'} alt='bulbasaur'
+              height={48}
+              width={48}
+              className="relative rounded-full border-solid border-2 border-gray-100 bg-green-600 md:h-16 md:w-16 -left-6 z-20"
+              />
+          </div>
+          <div>
+            <h4 className='font-bold'>10.4k+</h4>
+            <p className='text-xs text-[#ADB2B1]'>Active users around the wordls</p>
+          </div>
+        </div>
       </div>
       <div className="relative h-fill flex justify-end">
         <CreditCard

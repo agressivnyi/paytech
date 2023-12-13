@@ -9,7 +9,7 @@ import Testimonial from './component/testimonials'
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-y-32 mt-32 gap-x-8 max-w-[1440px] px-5 lg:px-10 xl:px-[100px] m-auto">
+    <main className="flex flex-col gap-y-32 mt-32 gap-x-8 max-w-[1440px] px-5 md:px-8 lg:px-10 xl:px-[100px] m-auto">
       <Hero />
       <StatsCards />
       <Brands />

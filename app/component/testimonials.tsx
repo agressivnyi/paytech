@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Testimonial() {
   return (
-    <section className="grid grid-cols-1 gap-x-8 gap-y-4 lg:grid-cols-3">
+    <section className="grid grid-cols-1 gap-x-8 gap-y-4 md:grid-cols-2 lg:grid-cols-3">
       <article className="flex flex-col gap-y-8 px-6 py-12 bg-[#27322F3D] backdrop-blur-md rounded-3xl">
         <span className="flex items-center justify-center p-4 rounded-full bg-[#3D544D] self-start">
           <IconQuote />

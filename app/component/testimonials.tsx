@@ -7,9 +7,9 @@ export default function Testimonial() {
           <IconQuote />
         </span>
         <p className="text-base leading-6">
-          "Great session! Dani was super helpful. She shared some practical
+          &quote;Great session! Dani was super helpful. She shared some practical
           advice on how can lorem ip we go about refining our service
-          offerings."
+          offerings.&quote;
         </p>
         <div className="flex gap-x-2 items-center">
           <Image
@@ -30,9 +30,9 @@ export default function Testimonial() {
           <IconQuote />
         </span>
         <p className="text-base leading-6">
-          "Great session! Dani was super helpful. She shared some practical
+          &quote;Great session! Dani was super helpful. She shared some practical
           advice on how can lorem ip we go about refining our service
-          offerings."
+          offerings.&quote;
         </p>
         <div className="flex gap-x-2 items-center">
           <Image
@@ -53,8 +53,8 @@ export default function Testimonial() {
           <IconQuote />
         </span>
         <p className="text-base leading-6">
-          "It's is both attractive and highly adaptable. It's exactly what I've
-          been looking forefinitely wo lorem ipsum dolorth the investment."
+          &quote;It's is both attractive and highly adaptable. It's exactly what I've
+          been looking forefinitely wo lorem ipsum dolorth the investment.&quote;
         </p>
         <div className="flex gap-x-2 items-center">
           <Image

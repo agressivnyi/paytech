@@ -53,7 +53,7 @@ export default function Testimonial() {
           <IconQuote />
         </span>
         <p className="text-base leading-6">
-          &quote;Its is both attractive and highly adaptable. Its exactly what I've
+          &quote;Its is both attractive and highly adaptable. Its exactly what Ive
           been looking forefinitely wo lorem ipsum dolorth the investment.&quote;
         </p>
         <div className="flex gap-x-2 items-center">

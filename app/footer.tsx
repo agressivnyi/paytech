@@ -11,7 +11,7 @@ export default function Footer() {
               <span className="text-xl font-medium">Banki</span>
             </div>
             <span className="text-base text-[#ADB2B1] max-w-[90%]">
-              We're trying to loot you by charging 120% interest loan
+              Were trying to loot you by charging 120% interest loan
             </span>
           </div>
 
